@@ -1165,12 +1165,12 @@ def main():
                 # Trending programs by category
                 st.markdown("### Trending by Financial Goal")
                 
-                goal_trends = trending_data.groupby('financial_goals')['trending_score'].mean().reset_index()
+                goal_trends = trending_data.groupby('financial_goals')['trending_score_x'].mean().reset_index()
                 goal_trends = goal_trends.sort_values('trending_score', ascending=False)
                 
                 fig = px.pie(
                     goal_trends, 
-                    values='trending_score', 
+                    values='trending_score_x', 
                     names='financial_goals',
                     title="Trending Score Distribution by Financial Goal"
                 )
@@ -1179,7 +1179,7 @@ def main():
                 # Display trending programs
                 st.markdown("### All Trending Programs")
                 st.dataframe(
-                    trending_data[['title', 'recent_ratings', 'recent_avg_rating', 'trending_score', 
+                    trending_data[['title', 'recent_ratings', 'recent_avg_rating', 'trending_score_x', 
                                   'financial_goals', 'age_bracket']]
                 )
     
