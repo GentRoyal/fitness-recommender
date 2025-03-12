@@ -1134,7 +1134,7 @@ def main():
                 
                 if st.button("Back to Program List"):
                     st.session_state.view_details = False
-                    st.experimental_rerun()
+                    st.rerun()
     
     # Trending Programs page
     elif selected == "Trending Programs":
