@@ -745,7 +745,7 @@ def main():
             """)
         
         with col2:
-            st.markdown('<i class="fa-solid fa-coins icon"></i>', unsafe_allow_html=True)
+            st.markdown('', unsafe_allow_html=True)
         
         # Quick stats
         st.markdown("<h2 class='sub-header'>Program Statistics</h2>", unsafe_allow_html=True)
