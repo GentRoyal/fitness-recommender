@@ -1101,7 +1101,7 @@ def main():
                 
                 col1, col2 = st.columns([1, 2])
                 with col1:
-                    st.image("https://www.example.com/placeholder.jpg", width=300)  # Replace with actual image URL
+                    st.image("https://img.icons8.com/?size=300&id=1675&format=png&color=000000", width=300)  # Replace with actual image URL
                 
                 with col2:
                     st.markdown(f"### {program_data['title']}")
