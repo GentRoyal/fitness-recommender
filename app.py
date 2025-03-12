@@ -656,7 +656,7 @@ def main():
     
     # Custom sidebar navigation with icons
     with st.sidebar:
-        st.image("https://img.icons8.com/?size=100&id=80406&format=png&color=000000", width=100)  # Replace with actual logo URL
+        st.image("https://img.icons8.com/?size=100&id=BOpyuffqH8uW&format=png&color=000000", width=100)  # Replace with actual logo URL
         st.title("Navigation")
         
         # Use streamlit-option-menu for better UI
