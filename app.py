@@ -21,6 +21,7 @@ st.set_page_config(layout="wide", page_title="Program Recommender System", page_
 
 # Custom CSS
 st.markdown("""
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
     .main-header {
         font-size: 2.5rem;
@@ -656,7 +657,8 @@ def main():
     
     # Custom sidebar navigation with icons
     with st.sidebar:
-        st.image("https://img.icons8.com/?size=100&id=BOpyuffqH8uW&format=png&color=000000", width=100)  # Replace with actual logo URL
+        #st.image("https://img.icons8.com/?size=100&id=BOpyuffqH8uW&format=png&color=000000", width=100)  # Replace with actual logo URL
+        st.markdown('<i class="fa-solid fa-coins icon"></i> Coins Balance', unsafe_allow_html=True)
         st.title("Navigation")
         
         # Use streamlit-option-menu for better UI
