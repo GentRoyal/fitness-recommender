@@ -1053,15 +1053,15 @@ def main():
             filtered_programs = pd.merge(filtered_programs, prog_counts, on='title', how='left')
             filtered_programs = filtered_programs.sort_values('count', ascending=False)
         
-        # Display programs
-        st.markdown(f"### Found {len(filtered_programs)} Programs")
-        
         # Display programs in a grid
         cols_per_row = 3
         rows = (len(filtered_programs) + cols_per_row - 1) // cols_per_row
         if rows > 100:
             rows = 20 # Display top 20
-        st.markdown(f"### Top {rows} rows Displayed")
+            st.markdown(f"### Found {len(filtered_programs)} Programs. Top {rows} rows Displayed")
+        else:
+            st.markdown(f"### Found {len(filtered_programs)} Programs.")
+        
         for row in range(rows):
             cols = st.columns(cols_per_row)
             for col_idx in range(cols_per_row):
