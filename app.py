@@ -726,10 +726,8 @@ def main():
     if selected == "Home":
         st.markdown("<h1 class='main-header'>Financial Education Program Recommender</h1>", unsafe_allow_html=True)
         
-        col1, col2 = st.columns([2, 1])
         
-        with col1:
-            st.markdown("""
+        st.markdown("""
             Welcome to the Financial Education Program Recommender! This intelligent system helps you discover
             the most relevant financial education programs based on your needs and preferences.
             
@@ -743,9 +741,6 @@ def main():
             
             Use the sidebar to navigate between different sections and apply filters.
             """)
-        
-        with col2:
-            st.markdown('', unsafe_allow_html=True)
         
         # Quick stats
         st.markdown("<h2 class='sub-header'>Program Statistics</h2>", unsafe_allow_html=True)
