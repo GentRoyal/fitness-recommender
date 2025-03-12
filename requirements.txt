@@ -3,6 +3,7 @@ streamlit_option_menu
 pandas
 numpy
 plotly
+wordcloud
 scikit-learn
 matplotlib
 seaborn
