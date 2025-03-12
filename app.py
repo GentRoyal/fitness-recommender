@@ -1154,9 +1154,9 @@ def main():
                     x='trending_score_x', 
                     y='title',
                     orientation='h',
-                    labels={'trending_score': 'Trending Score', 'title': 'Program'},
+                    labels={'trending_score_x': 'Trending Score', 'title': 'Program'},
                     hover_data=['recent_ratings', 'recent_avg_rating'],
-                    color='trending_score',
+                    color='trending_score_x',
                     color_continuous_scale='Viridis'
                 )
                 fig.update_layout(yaxis={'categoryorder': 'total ascending'})
