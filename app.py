@@ -667,8 +667,7 @@ def main():
     
     # Custom sidebar navigation with icons
     with st.sidebar:
-        #st.image("https://img.icons8.com/?size=100&id=BOpyuffqH8uW&format=png&color=000000", width=100)  # Replace with actual logo URL
-        st.markdown('<i class="fa-solid fa-coins icon"></i> Coins Balance', unsafe_allow_html=True)
+        st.markdown('<i class="fa-solid fa-coins icon"></i> Program Recommender', unsafe_allow_html=True)
         st.title("Navigation")
         
         # Use streamlit-option-menu for better UI
@@ -746,7 +745,7 @@ def main():
             """)
         
         with col2:
-            st.image("https://www.example.com/finance_image.jpg", caption="")  # Replace with actual image URL
+            st.markdown('<i class="fa-solid fa-coins icon"></i>', unsafe_allow_html=True)
         
         # Quick stats
         st.markdown("<h2 class='sub-header'>Program Statistics</h2>", unsafe_allow_html=True)
