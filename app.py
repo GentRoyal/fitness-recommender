@@ -41,6 +41,16 @@ st.markdown("""
         margin-bottom: 1rem;
         background-color: white;
     }
+    .icon {
+        font-size: 50px; /* Increase icon size */
+        color: #1E88E5;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    .icon-text {
+        font-size: 30px; /* Adjust text size */
+        vertical-align: middle;
+    }
 </style>
 """, unsafe_allow_html=True)
 
