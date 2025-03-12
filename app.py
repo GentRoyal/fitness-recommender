@@ -667,7 +667,7 @@ def main():
     
     # Custom sidebar navigation with icons
     with st.sidebar:
-        st.markdown('<i class="fa-solid fa-coins icon"></i> Program Recommender', unsafe_allow_html=True)
+        st.markdown('<i class="fa-solid fa-coins icon"></i>', unsafe_allow_html=True)
         st.title("Navigation")
         
         # Use streamlit-option-menu for better UI
