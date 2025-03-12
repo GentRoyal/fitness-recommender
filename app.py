@@ -685,7 +685,7 @@ def main():
                 menu_icon="cast",
                 default_index=0,
                 styles={
-                    "container": {"padding": "5px", "background-color": "#f0f2f6"},
+                    "container": {"padding": "5px", "background-color": "#a9a9a9"},
                     "icon": {"color": "#1E88E5", "font-size": "16px"},
                     "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px"},
                     "nav-link-selected": {"background-color": "#1E88E5", "color": "white"},
