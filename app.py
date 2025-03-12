@@ -1166,7 +1166,7 @@ def main():
                 st.markdown("### Trending by Financial Goal")
                 
                 goal_trends = trending_data.groupby('financial_goals')['trending_score_x'].mean().reset_index()
-                goal_trends = goal_trends.sort_values('trending_score', ascending=False)
+                goal_trends = goal_trends.sort_values('trending_score_x', ascending=False)
                 
                 fig = px.pie(
                     goal_trends, 
