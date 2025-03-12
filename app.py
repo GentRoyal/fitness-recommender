@@ -226,7 +226,7 @@ def make_recommendations(program, N, users_with_finance, cosine_sim, threshold=0
     idx = users_with_finance[users_with_finance['title'] == program].index[0]
     sim_score = list(enumerate(cosine_sim[idx]))
     sim_score = sorted(sim_score, key=lambda x: x[1], reverse=True)
-    sim_score = [x for x in sim_score if x[1] >= threshold][1:N+1]
+    sim_score = [x for x in sim_score if x[1] >= threshold][1:]
     
     program_idx = [x[0] for x in sim_score]
     similarity = [x[1] for x in sim_score]
@@ -254,7 +254,8 @@ def make_recommendations(program, N, users_with_finance, cosine_sim, threshold=0
         display_cols.insert(len(display_cols)-1, 'keywords')
     if return_indices:
         display_cols.append('index')
-    
+    recommendations = recommendations.drop_duplicates(subset=['title']).reset_index(drop=True)
+    recommendations = recommendations.head(N)
     return recommendations[display_cols]
 
 def content_generate_ratings(program, user, rating_data, users_with_finance, cosine_sim, k=20, threshold=0.0):
