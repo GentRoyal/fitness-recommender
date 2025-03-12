@@ -789,7 +789,7 @@ def main():
         
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image("https://img.icons8.com/?size=100&id=WFSwkOenGPSn&format=png&color=000000", width=200)  # Replace with actual image URL
+            st.image("https://img.icons8.com/?size=200&id=1KhQR82Cjj4n&format=png&color=000000", width=200)  # Replace with actual image URL
         
         with col2:
             st.markdown(f"### {featured_program['title']}")
