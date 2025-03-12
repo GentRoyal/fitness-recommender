@@ -1151,7 +1151,7 @@ def main():
                 
                 fig = px.bar(
                     trending_data.head(10), 
-                    x='trending_score', 
+                    x='trending_score_x', 
                     y='title',
                     orientation='h',
                     labels={'trending_score': 'Trending Score', 'title': 'Program'},
