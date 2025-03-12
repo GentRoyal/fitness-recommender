@@ -17,7 +17,7 @@ from collections import Counter
 import re
 
 # App configuration
-st.set_page_config(layout="wide", page_title="Program Recommender System", page_icon="🎓")
+st.set_page_config(layout="wide", page_title="Program Recommender System", page_icon="📊")
 
 # Custom CSS
 st.markdown("""
