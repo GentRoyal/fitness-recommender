@@ -1060,8 +1060,8 @@ def main():
         cols_per_row = 3
         rows = (len(filtered_programs) + cols_per_row - 1) // cols_per_row
         if rows > 100:
-            rows = 50 # Display top 50
-            
+            rows = 20 # Display top 20
+        st.markdown(f"### Top {rows} rows Displayed")
         for row in range(rows):
             cols = st.columns(cols_per_row)
             for col_idx in range(cols_per_row):
