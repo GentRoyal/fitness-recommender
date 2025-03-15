@@ -721,7 +721,7 @@ def main():
         }
         
         st.sidebar.markdown("---")
-        st.sidebar.markdown("© 2023 Program Recommender")
+        st.sidebar.markdown("© 2025 Program Recommender")
     
     # Home page
     if selected == "Home":
